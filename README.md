@@ -1,7 +1,7 @@
 markdown-mod
 ============
 
-Makes the buil-in [markdown](https://www.home-assistant.io/lovelace/markdown/) card better.
+Makes the built-in [markdown](https://www.home-assistant.io/lovelace/markdown/) card better.
 
 For installation instructions [see this guide](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins).
 
