@@ -12,7 +12,9 @@ This is *not* a new card. Instead it *changes the way the built-in markdown card
 
 Specifically, it adds the ability to have the content of the card change dynamically with your Home Assistant state.
 
-The magic begins with the **template** `[[ <template> ]]`.
+It also allows you to put icons in the markdown using e.g. `<ha-icon icon="mdi:home-assistant"></ha-icon>`
+
+For dynamic content, the magic begins with the **template** `[[ <template> ]]`.
 
 Any time `[[ <template> ]]` is found in the `content:` of any markdown card, it will be replaced with something else depending on what `<template>` is.
 
@@ -56,6 +58,18 @@ content: |
 ```
 
 ![markdown-mod](https://user-images.githubusercontent.com/1299821/59043091-e8d2e100-887b-11e9-9c31-4512bd2ebc47.gif)
+
+```yaml
+type: markdown
+title: ha-icon
+content: |
+  This is a markdown card! With mdi icons!
+  <ha-icon icon="mdi:home-assistant"></ha-icon>
+
+  Right in the <ha-icon icon="mdi:format-align-middle"></ha-icon> of the <ha-icon icon="mdi:text"></ha-icon> too.
+```
+![markdown icon](https://user-images.githubusercontent.com/1299821/59097079-e5dbfd00-891c-11e9-94a1-4f4e50377a95.jpg)
+
 
 ---
 <a href="https://www.buymeacoffee.com/uqD6KHCdJ" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
