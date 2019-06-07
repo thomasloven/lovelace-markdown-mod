@@ -16,6 +16,8 @@ It also allows you to put icons in the markdown using e.g. `<ha-icon icon="mdi:h
 
 For dynamic content, the magic begins with the **template** `[[ <template> ]]`.
 
+> See [This article](https://github.com/thomasloven/hass-config/wiki/Mod-plugin-templates) for further details on templates.
+
 Any time `[[ <template> ]]` is found in the `content:` of any markdown card, it will be replaced with something else depending on what `<template>` is.
 
 It can be:
