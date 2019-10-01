@@ -1,6 +1,9 @@
 markdown-mod
 ============
 
+# THIS PLUGIN IS DEPRECATED SINCE HOME ASSISTANT VERSION 0.99
+# ALL FUNCTIONALIY IS NOW BUILT INTO HOME ASSISTANT BY DEFAULT
+
 Makes the built-in [markdown](https://www.home-assistant.io/lovelace/markdown/) card better.
 
 For installation instructions [see this guide](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins).

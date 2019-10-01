@@ -37,7 +37,10 @@ customElements.whenDefined('hui-markdown-card').then(() => {
     const markdown = this.shadowRoot.querySelector("ha-markdown");
     if(!markdown) return;
     markdown.allowSvg = true;
-    markdown.content = parseTemplate(this._config.content);
+
+    // Also run the contents through the Home Assistant templating engine
+    if(this._hass)
+      parseTemplate(this._hass, this._config.content).then((c) => markdown.content = c);
   }
 
   // Add a listener for location-changed on first update
